@@ -119,8 +119,10 @@ Create a new organization resource
 Make sure content type is JSON in postman or in request setup of client app. Also raw should be selected in Postman
 e.g,
 `{"name": "Sample Org name", "founded": "2010", "revenue":"40000", "parent": null }`
-You can specify parent of this org by providing _id of parent organization or you can completely skip it in 
-post body
+
+You can specify parent of this org by providing _id of parent organization like below:
+`{"name": "Sample Org name", "founded": "2010", "revenue":"40000", "parent": "5dbf6a131ae0370d3574188f" }`
+making it parent of parent orgs "ABC"
 
 **Response**
 
