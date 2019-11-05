@@ -20,6 +20,9 @@ For development, you will only need Node.js, express and a node global package, 
     $ cd org-restapi
     $ npm install
 
+## Or use Docker container
+This repository also contains a docker file. You can build using this file and run container instead of installing 
+on your machine.
 
 ## Running the project on local/dev environment
 
