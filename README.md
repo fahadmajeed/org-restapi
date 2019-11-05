@@ -6,6 +6,9 @@ Reason to choose MongoDB Atlas is because it allows us to use mongoDB without ha
 autoscales it automatically in a cluster and works as a cloud service. Mongo Atlas hosts our DB and we can connect 
 to it from anywhere. 
 
+## Business logic and hierarchical setup
+Currently, we are only catering one level of organizational hierarchy/nesting.
+
 ## Requirements
 
 For development, you will only need Node.js, express and a node global package, NPM, installed in your environement.
@@ -18,7 +21,7 @@ For development, you will only need Node.js, express and a node global package, 
     $ npm install
 
 
-## Running the project
+## Running the project on local/dev environment
 
     $ npm start
 
@@ -45,6 +48,8 @@ Gets a list of all organizations in the system
     ...
 ]
 ```
+Example: http://ec2-52-50-79-48.eu-west-1.compute.amazonaws.com/api/v1/orgs or http://localhost:3000/api/v1/orgs
+
 ## GET /api/v1/orgs/:orgId
 Get complete detail of an organization with its parent organization and all children orgs 
 
