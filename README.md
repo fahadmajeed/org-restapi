@@ -5,7 +5,7 @@ Organizations' CRUD REST API app built in NodeJS, Express and (MongoDB Atlas)
 Reason to choose MongoDB Atlas is because it allows us to use mongoDB without having to install it on our machines, 
 autoscales it automatically in a cluster and works as a cloud service. Mongo Atlas hosts our DB and we can connect 
 to it from anywhere. 
----
+
 ## Requirements
 
 For development, you will only need Node.js, express and a node global package, NPM, installed in your environement.
@@ -13,8 +13,8 @@ For development, you will only need Node.js, express and a node global package, 
 
 ## Install
 
-    $ git clone https://github.com/fahadmajeed/org-api
-    $ cd org-api
+    $ git clone https://github.com/fahadmajeed/org-restapi
+    $ cd org-restapi
     $ npm install
 
 
@@ -34,6 +34,7 @@ Subsequently you can run all end points against this base URL.
 ## GET /api/v1/orgs
 Gets a list of all organizations in the system
 ***response***
+```
 [
     {
         "_id": "5dbf6a131ae0370d3574188f",
@@ -43,6 +44,7 @@ Gets a list of all organizations in the system
     },
     ...
 ]
+```
 ## GET /api/v1/orgs/:orgId
 Get complete detail of an organization with its parent organization and all children orgs 
 
