@@ -15,7 +15,7 @@ RUN npm ci --only=production
 # Bundle app source
 COPY . .
 #environment variable
-ENV MONGO_ATLAS_PWD 'fahadmajeed'
+ENV MONGO_ATLAS_PWD 'jibberish'
 
 EXPOSE 3000
 
